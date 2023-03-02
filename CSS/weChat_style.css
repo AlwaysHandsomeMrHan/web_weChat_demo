@@ -1,0 +1,223 @@
+@import "https://lib.baomitu.com/simple-line-icons/latest/css/simple-line-icons.css";
+/*div{*/
+/*    border: 1px solid black;*/
+/*}*/
+#phone_frame,#phone_top,#phone_camera,#phone_bottom
+{
+    border: 1px solid black;
+}
+/*手机框架*/
+#phone_frame{
+    border-radius:40px;
+    width: 400px;
+    height: 700px;
+    /*居中显示此div*/
+    margin: 0 auto;
+}
+
+/*手机顶部*/
+#phone_top{
+    width: 399px;
+    height: 85px;
+    border-radius: 40px 40px 0px 0px;
+    border-bottom-color: #2e2c2c;
+    background-color: black;
+    position: relative;
+}
+
+
+/*手机摄像头*/
+#phone_camera{
+    border-radius: 0px 0px 15px 15px;
+    border-color: #181717;
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    left: 70px;
+    top: 0px;
+    background-color: black;
+}
+
+/*phone's time show/手机时间显示*/
+#time_show{
+    margin: 0 0 0 0 ;
+    font-size: 25px;
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    color: white;
+}
+
+/*phone's status show/手机状态栏显示*/
+#phone_status{
+    width: 120px;
+    height: 25px;
+    position: relative;
+    left: 76px;
+    top: 5px;
+}
+
+/*The name of the person you're chatting with/与你聊天者的姓名*/
+#friend_name{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*use <div> label to show the icon/利用<div>标签显示符号*/
+#back_floor{
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    bottom: 10px;
+}
+
+/*icon's setting/符号的设置*/
+#back_floor:before{
+    font-family: simple-line-icons;
+    content: "\E605";
+    color: white;
+}
+/*the number of unread messages/未读消息的数量*/
+#message_num{
+    color: white;
+    background-color: #282828;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+}
+/*it is often called an information bar/信息栏展开按钮*/
+#more_show{
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    font-size: 45px;
+}
+
+/*手机聊天背景外框*/
+#phone_background_out{
+    width: 400px;
+    height: 520px;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/*手机聊天背景内框*/
+#phone_background_in{
+    width: 402px;
+    height: 520px;
+    background-color: black;
+    padding-right: 15px;
+    overflow-y: auto;
+}
+
+/* chat history/聊天记录*/
+.chat_document_example{
+    width: 375px;
+    height:100px;
+    position: relative;
+    left: 10px;
+}
+.chat_document_user{
+    width: 375px;
+    position: relative;
+    left: 10px;
+}
+
+/*left picture's setting/左侧头像设置*/
+.leftpor_pic{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    border-radius: 7px;
+}
+
+/*right picture's setting/右侧头像设置*/
+.rightpor_pic{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    border-radius: 7px;
+
+}
+
+/*little triangle's setting/小三角形设置*/
+.left_chat:before,.right_chat:after{
+    content: '';
+    border: 8px solid transparent;
+    position: absolute;
+}
+
+/*left chatbox's setting/左侧聊天框设置*/
+.left_chat{
+    font-family: 微软雅黑;
+    color: white;
+    background-color: #282828;
+    position: absolute;
+    left: 60px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+/*right chatbox's setting/右侧聊天框设置*/
+.right_chat{
+    font-family: 微软雅黑;
+    color: white;
+    background-color: #282828;
+    position: absolute;
+    right: 60px;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+/*left triangle position/左侧三角形定位*/
+.left_chat:before{
+    border-right: 8px solid #282828;
+    left: -16px;
+}
+
+/*right triangle position/右侧三角形定位*/
+.right_chat:after{
+    border-left: 8px solid #282828;
+    right: -16px;
+    top: 7px;
+}
+
+/*手机底部*/
+#phone_bottom{
+    width: 399px;
+    height: 95px;
+    border-radius: 0px 0px 40px 40px;
+}
+/*手机底部模拟输入*/
+#bottom_pic{
+    width: 399px;
+    height: 95px;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+/*输入框*/
+#input_text{
+    position: relative;
+    bottom: -7px;
+    z-index: 2;
+    left: 60px;
+    border: none;
+    resize: none;
+    background-color: #282828;
+    color: white;
+    height: 43px;
+    outline: medium;
+    width: 230px;
+    overflow-y: hidden;
+    border-radius: 10px;
+}

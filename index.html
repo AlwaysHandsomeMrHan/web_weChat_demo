@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信聊天生成</title>
+    <script type="text/javascript" src="JS/JQuery_V3.6.3.js"></script>
+    <!--    <script type="text/javascript" src="JS/JQurey1.10.2.js"></script>-->
+    <script type="text/javascript" src="JS/weChat_JavaScript.js"></script>
+    <link rel="stylesheet" href="CSS/weChat_style.css">
+    <!--    <script>-->
+    <!--        window.onload = function () {-->
+    <!--            alert("YES,nei");-->
+
+    <!--        }-->
+    <!--    </script>-->
+</head>
+<!--<script>-->
+<!--    function urlOnchange() {-->
+<!--        alert(document.getElementById("upload_pic").value);-->
+<!--    }-->
+<!--</script>-->
+<body>
+<!--手机框架-->
+<div id="phone_frame">
+
+    <!--    手机顶部显示-->
+    <div id="phone_top">
+        <!--时间显示-->
+        <p id="time_show">00:00</p>
+        <!--        摄像头，呼吸灯-->
+        <div id="phone_camera"></div>
+        <!--        phone's status/手机状态栏-->
+        <img id="phone_status" src="static/imgs/phone_status.png"/>
+        <div id="back_floor">
+            <span id="message_num">
+                5
+            </span>
+        </div>
+        <p id="friend_name">朋友</p>
+        <span id="more_show">...</span>
+    </div>
+
+    <!--    手机聊天背景框-->
+    <div id="phone_background_out">
+        <div id="phone_background_in">
+            <div class="chat_document_example">
+                <img class="leftpor_pic" src="./static/imgs/leftpor.jpg">
+                <p class="left_chat">在吗</p>
+            </div>
+            <div class="chat_document_example">
+                <img class="rightpor_pic" src="./static/imgs/rightpor.jpg"/>
+                <p class="right_chat">在</p>
+            </div>
+            <div class="chat_document_user">
+                <img/>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!--    手机底部显示-->
+    <div id="phone_bottom">
+        <textarea id="input_text" name="text"></textarea>
+        <img id="bottom_pic" src="static/imgs/back_bottom.jpeg"/>
+    </div>
+</div>
+<input id="upload_pic" type="file" accept="image/*" style="visibility: hidden"/>
+</body>
+</html>
