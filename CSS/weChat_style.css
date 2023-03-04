@@ -1,10 +1,14 @@
 @import "https://lib.baomitu.com/simple-line-icons/latest/css/simple-line-icons.css";
 
+ul li{
+    padding-top: 40px;
+    font-size: 20px;
+}
 #indicate{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: absolute;
     top: 0px;
-    left: 10%;
+    left: 5%;
     display: inline-block;
 }
 #phone_frame,#phone_top,#phone_camera,#phone_bottom
